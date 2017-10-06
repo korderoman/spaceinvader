@@ -7,7 +7,9 @@ var musica;
 var test=0;
 
 function setup(){
-createCanvas(800, 550);
+    createCanvas(800,550);
+//createCanvas(windowWidth, windowHeight).parent("juego");;
+
     heroe= new NavesH();
     villano= new NavesE();
     heroe.crear();
@@ -23,8 +25,13 @@ createCanvas(800, 550);
     portada=loadImage("./images/portada.png");
    
 }
+/*
+function windowResized(){
+    resizeCanvas(windowWidth,windowHeight);
+}*/
 
 function draw(){
+   
    if(gameOver==true){
        background(0, 100);
         image(portada, 0, 0, 800, 550);

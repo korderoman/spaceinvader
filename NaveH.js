@@ -36,7 +36,7 @@ function NavesH(){
         this.nave.addAnimation("muerte","./images/explosiongreen.png");
         //definimos el limite de las colisiones
         this.nave.setCollider("circle",0,0,25);
-        this.nave.debug=true;//debuger de colision nave
+       // this.nave.debug=true;//debuger de colision nave
        // this.nave.immovable=true; //hacemos que el objeto sea inmovil a la colision
         this.fondo=loadImage("./images/background.jpg");
         //Creamos la imagen de la bala
@@ -72,7 +72,7 @@ function NavesH(){
                 this.balaH=createSprite(this.nave.position.x, this.nave.position.y-20);
                 this.balaH.addImage(this.balaHImagen);
                 this.balaH.setCollider("rectangle",0,0,5,15);
-                this.balaH.debug=true;
+               // this.balaH.debug=true;
                 this.balaH.velocity.y=-3;
                 this.balaH.life=170; //tiempo de vida de la bala
                 this.balaHArray.add(this.balaH);

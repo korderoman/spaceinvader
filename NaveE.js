@@ -21,12 +21,12 @@ function NavesE(){
             this.enemigo1=createSprite(60+this.distx*i,70);
             this.enemigo1.addAnimation("enemigo1","./images/eazul1.png","./images/eazul2.png");
             this.enemigo1.setCollider("rectangle",0,0,40,30);
-            this.enemigo1.debug=true;
+           // this.enemigo1.debug=true;
             this.enemigos1Array.add(this.enemigo1);
             this.enemigo2=createSprite(60+this.distx*i,120);
             this.enemigo2.addAnimation("enemigo2","./images/everde1.png","./images/everde2.png");
             this.enemigo2.setCollider("rectangle",0,0,40,30);
-            this.enemigo2.debug=true;
+           // this.enemigo2.debug=true;
             this.enemigos2Array.add(this.enemigo2);
         }
     }
@@ -65,7 +65,7 @@ function NavesE(){
             this.balaE=createSprite(this.enemigos1Array[posicion1-1].position.x,this.enemigos1Array[posicion1-1].position.y);
             this.balaE.addImage(this.balaEImagen);
             this.balaE.setCollider("rectangle",0,0,5,15);
-            this.balaE.debug=true; // debugeamos las bala
+            //this.balaE.debug=true; // debugeamos las bala
             this.balaE.life=170;
             this.balaE.velocity.y=8;
             this.balaEArray.add(this.balaE);
@@ -80,7 +80,7 @@ function NavesE(){
             this.balaE=createSprite(this.enemigos2Array[posicion2-1].position.x,this.enemigos2Array[posicion2-1].position.y);
             this.balaE.addImage(this.balaEImagen);
             this.balaE.setCollider("rectangle",0,0,5,15);
-            this.balaE.debug=true; // debugeamos las bala
+            //this.balaE.debug=true; // debugeamos las bala
             this.balaE.life=170;
             this.balaE.velocity.y=10;
             this.balaEArray.add(this.balaE);
